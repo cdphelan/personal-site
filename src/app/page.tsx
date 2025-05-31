@@ -15,10 +15,10 @@ export default function HomePage() {
     return () => clearTimeout(timer);
   }, []);
 
-  const toggleCard = (index) => {
+  const toggleCard = (index: number) => {
     setExpandedCard(expandedCard === index ? null : index);
   };
-
+  
   const cards = [
     {
       icon: <FileText className="w-6 h-6" />,
