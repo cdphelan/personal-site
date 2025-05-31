@@ -8,7 +8,7 @@ import { Github, Linkedin, FileText, BarChart2, ChevronDown, GraduationCap, Char
 
 export default function HomePage() {
   const [showIcons, setShowIcons] = useState(false);
-  const [expandedCard, setExpandedCard] = useState(null);
+  const [expandedCard, setExpandedCard] = useState<number | null>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => setShowIcons(true), 200); // show after 200ms
@@ -18,7 +18,7 @@ export default function HomePage() {
   const toggleCard = (index: number) => {
     setExpandedCard(expandedCard === index ? null : index);
   };
-  
+
   const cards = [
     {
       icon: <FileText className="w-6 h-6" />,
