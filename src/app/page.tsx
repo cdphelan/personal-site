@@ -75,7 +75,7 @@ export default function HomePage() {
           Chanda Phelan Kane
         </motion.h1>
         <motion.p className="text-lg md:text-xl mt-8 mb-8 max-w-lg text-center font-sans" style={{ y: useTransform(scrollY, [0, heroHeight], [0, -200]) }}>
-          Human-computer interaction researcher focused on addiction, recovery, and digital health.
+          Human-computer interaction researcher focused on addiction, recovery, and digital health for a more equitable future.
         </motion.p>
 
         <div className="mt-6 text-center">
