@@ -75,8 +75,30 @@ export default function HomePage() {
           Chanda Phelan Kane
         </motion.h1>
         <motion.p className="text-lg md:text-xl mt-8 mb-8 max-w-lg text-center font-sans" style={{ y: useTransform(scrollY, [0, heroHeight], [0, -200]) }}>
-          Data scientist and UX researcher specializing in health tech solutions that improve human outcomes.
+          Human-computer interaction researcher focused on addiction, recovery, and digital health.
         </motion.p>
+
+        <div className="mt-6 text-center">
+  <p className="text-lg font-medium mb-2">
+    Here from RSMj? Check out our interactive dashboard:
+  </p>
+  <a
+    href="https://canntalk-dashboard.streamlit.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block transition-transform hover:scale-105"
+  >
+    <img
+      src="/img/canntalk.png"
+      alt="Click to view the dashboard"
+      className="rounded-xl shadow-lg mx-auto"
+      style={{ maxWidth: "50%", height: "auto" }}
+    />
+    <p className="mt-2 text-blue-600 underline text-sm">
+      Tap the image to explore the dashboard →
+    </p>
+  </a>
+</div>
 
          <motion.div
           className="flex justify-center gap-6 py-16 mt-6"
@@ -286,7 +308,7 @@ export default function HomePage() {
             {/* Footer */}
       <div className="text-center pb-8 mt-8">
         <p className="text-sm text-gray-500">
-          Portfolio & Digital CV. Last updated June 2, 2025.
+          Portfolio & Digital CV. Last updated July 19, 2025.
         </p>
       </div>
 
